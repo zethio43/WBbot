@@ -34,9 +34,9 @@ var buff = [
 ];
 
 var fim = [
-  "Fim1 (หมาแดง) - ",
-  "Fim2 (หมาแดง) - ",
-  "Fim3 (หมาแดง) - "
+  "ฟิม1 - ",
+  "ฟิม2 - ",
+  "ฟิม3 - "
 ];
 
 var dog = [
@@ -288,7 +288,7 @@ bot.on("message", function(message) {
       // message.channel.sendMessage(shell[3]);
       break;
 
-    case "fim1":
+    case "ฟิม1":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -307,9 +307,9 @@ bot.on("message", function(message) {
         .addField(boss[2], fim, true )
         .addField(boss[5], dragon, true)
         .setColor(0x00FFFF)
-      message.channel.sendEmbed(embed);essage.channel.sendMessage(shell[0]);
+      message.channel.sendEmbed(embed);
       break;
-    case "fim2":
+    case "ฟิม2":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -330,7 +330,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[1]);
       break;
-    case "fim3":
+    case "ฟิม3":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
