@@ -9,7 +9,7 @@ var fortunes = [
   "ไม่ติด",
   "อาจจะติด",
   "ติดมั้ง",
-  "ติดดิวะ",
+  "ติดดิวะ"
 ];
 
 var boss = [
@@ -107,10 +107,10 @@ bot.on("ready", function() {
       else message.channel.sendMessage("Can't read that");
       break;
     case "ตีบวก8":
-      message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)])
+      message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
       break;
     case "ตีบวก9":
-      message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)])
+      message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
       break;
     case "บอส":
       var embed = new Discord.RichEmbed()
@@ -124,7 +124,7 @@ bot.on("ready", function() {
       message.channel.sendEmbed(embed);
       break;
     case "ขาว":
-      message.channel.sendMessage("กาก");;
+      message.channel.sendMessage("กาก");
       break;
     case "หอย1":
       // shell[0] = args[0];
