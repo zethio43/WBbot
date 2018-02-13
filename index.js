@@ -79,17 +79,17 @@ bot.on("ready", function() {
 
 // });
 
-// bot.on("message", function(message) {
-//   if(message.author.equals(bot.user)) return;
-//
-//   // if(message.content == "บอส")
-//   // {
-//   //   message.channel.sendMessage("หอย 1 -   23.05");
-//   //   message.channel.sendMessage("หอย 2 -   23.05");
-//   //   message.channel.sendMessage("หอย 3 -   23.05");
-//   //   message.channel.sendMessage("หอย 4 -   23.05");
-//   //
-//   // }
+bot.on("message", function(message) {
+  if(message.author.equals(bot.user)) return;
+
+  // if(message.content == "บอส")
+  // {
+  //   message.channel.sendMessage("หอย 1 -   23.05");
+  //   message.channel.sendMessage("หอย 2 -   23.05");
+  //   message.channel.sendMessage("หอย 3 -   23.05");
+  //   message.channel.sendMessage("หอย 4 -   23.05");
+  //
+  // }
 
   if(!message.content.startsWith(PREFIX)) return;
 
