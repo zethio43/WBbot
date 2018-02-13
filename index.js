@@ -77,7 +77,7 @@ bot.on("ready", function() {
   // member.guild.channels.find("name", "General").sendMessage(member.toString() + " welcome to " + member.guild.channels.find("name", "General"));
 
 
-});
+// });
 
 // bot.on("message", function(message) {
 //   if(message.author.equals(bot.user)) return;
