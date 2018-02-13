@@ -4,10 +4,12 @@ const TOKEN = "NDEyNDYyNTEyMzExNzYyOTQ0.DWKnMQ.nR57ONUCAcDq20md55xkQDM8Jfc";
 const PREFIX = "-";
 
 var fortunes = [
-  "Yes",
-  "No",
-  "Maybe",
-  "May not be"
+  "แตก",
+  "แหก",
+  "ไม่ติด",
+  "อาจจะติด",
+  "ติดมั้ง",
+  "ติดดิวะ",
 ];
 
 var boss = [
@@ -70,24 +72,24 @@ bot.on("ready", function() {
     console.log("Ready")
 });
 
-bot.on("guildMemberAdd", function(member) {
-  member.guild.channels.find("name", "general").sendMessage(member.toString() + "เซิฟเทส" + member.guild.channels.find("name", "general"));
+// bot.on("guildMemberAdd", function(member) {
+//   member.guild.channels.find("name", "general").sendMessage(member.toString() + "เซิฟเทส" + member.guild.channels.find("name", "general"));
   // member.guild.channels.find("name", "General").sendMessage(member.toString() + " welcome to " + member.guild.channels.find("name", "General"));
 
 
 });
 
-bot.on("message", function(message) {
-  if(message.author.equals(bot.user)) return;
-
-  // if(message.content == "บอส")
-  // {
-  //   message.channel.sendMessage("หอย 1 -   23.05");
-  //   message.channel.sendMessage("หอย 2 -   23.05");
-  //   message.channel.sendMessage("หอย 3 -   23.05");
-  //   message.channel.sendMessage("หอย 4 -   23.05");
-  //
-  // }
+// bot.on("message", function(message) {
+//   if(message.author.equals(bot.user)) return;
+//
+//   // if(message.content == "บอส")
+//   // {
+//   //   message.channel.sendMessage("หอย 1 -   23.05");
+//   //   message.channel.sendMessage("หอย 2 -   23.05");
+//   //   message.channel.sendMessage("หอย 3 -   23.05");
+//   //   message.channel.sendMessage("หอย 4 -   23.05");
+//   //
+//   // }
 
   if(!message.content.startsWith(PREFIX)) return;
 
@@ -104,6 +106,12 @@ bot.on("message", function(message) {
       if(args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)])
       else message.channel.sendMessage("Can't read that");
       break;
+    case "ตีบวก8":
+      message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)])
+      break;
+    case "ตีบวก9":
+      message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)])
+      break;
     case "บอส":
       var embed = new Discord.RichEmbed()
         .addField(boss[0], shell, true)
@@ -115,8 +123,8 @@ bot.on("message", function(message) {
         .setColor(0x00FFFF)
       message.channel.sendEmbed(embed);
       break;
-    case "noticeme":
-      message.channel.sendMessage(message.author.toString() + " Test me ");
+    case "ขาว":
+      message.channel.sendMessage("กาก");;
       break;
     case "หอย1":
       // shell[0] = args[0];
