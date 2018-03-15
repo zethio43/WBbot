@@ -106,10 +106,10 @@ bot.on("message", function(message) {
       if(args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)])
       else message.channel.sendMessage("Can't read that");
       break;
-    case "ตีบวก8":
+    case "+8":
       message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
       break;
-    case "ตีบวก9":
+    case "+9":
       message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
       break;
     case "บอส":
@@ -698,6 +698,79 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[3]);
       break;
+    case "reset":
+      // shell[0] = args[0];
+      for (i = 0; i < args.length; i++)
+      {
+        if(i == 0)
+        {
+          shell[0] = "";
+          shell[1] = "";
+          shell[2] = "";
+          shell[3] = "";
+          buff[0] = "";
+          buff[1] = "";
+          buff[2] = "";
+          buff[3] = "";
+          fim[0] = "";
+          fim[1] = "";
+          fim[2] = "";
+          dog[0] = "";
+          dog[1] = "";
+          dog[2] = "";
+          spider[0] = "";
+          spider[1] = "";
+          spider[2] = "";
+          dragon[0] = "";
+          dragon[1] = "";
+          dragon[2] = "";
+          dragon[3] = "";
+          dragon[4] = "";
+          dragon[5] = "";
+          dragon[6] = "";
+          dragon[7] = "";
+          dragon[8] = "";
+          dragon[9] = "";
+        }
+        shell[0] += "หอย1 - " + " ";
+        shell[1] += "หอย2 - " + " ";
+        shell[2] += "หอย3 - " + " ";
+        shell[3] += "หอย4 - " + " ";
+        buff[0] += "ควาย1 - " + " ";
+        buff[1] += "ควาย2 - " + " ";
+        buff[2] += "ควาย3 - " + " ";
+        buff[3] += "ควาย4 - " + " ";
+        fim[0] += "ฟิม1 - " + " ";
+        fim[1] += "ฟิม2 - " + " ";
+        fim[2] += "ฟิม3 - " + " ";
+        dog[0] += "หมา1 - " + " ";
+        dog[1] += "หมา2 - " + " ";
+        dog[2] += "หมา3 - " + " ";
+        spider[0] += "แมงมุม1 - " + " ";
+        spider[1] += "แมงมุม2 - " + " ";
+        spider[2] += "แมงมุม3 - " + " ";
+        dragon[0] += "มังกร1 - " + " ";
+        dragon[1] += "มังกร2 - " + " ";
+        dragon[2] += "มังกร3 - " + " ";
+        dragon[3] += "มังกร4 - " + " ";
+        dragon[4] += "มังกร5 - " + " ";
+        dragon[5] += "มังกร6 - " + " ";
+        dragon[6] += "มังกร7 - " + " ";
+        dragon[7] += "มังกร8 - " + " ";
+        dragon[8] += "มังกร9 - " + " ";
+        dragon[9] += "มังกร10 - " + " ";
+      }
+      var embed = new Discord.RichEmbed()
+        .addField(boss[0], shell, true)
+        .addField(boss[1], buff, true)
+        .addField(boss[3], dog, true)
+        .addField(boss[4], spider, true)
+        .addField(boss[2], fim, true )
+        .addField(boss[5], dragon, true)
+        .setColor(0x00FFFF)
+      message.channel.sendEmbed(embed);
+      // message.channel.sendMessage(shell[3]);
+      break;
     case "all":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
@@ -732,33 +805,42 @@ bot.on("message", function(message) {
           dragon[8] = "";
           dragon[9] = "";
         }
-        shell[0] += args[i] + " ";
-        shell[1] += args[i] + " ";
-        shell[2] += args[i] + " ";
-        shell[3] += args[i] + " ";
-        buff[0] += args[i] + " ";
-        buff[1] += args[i] + " ";
-        buff[2] += args[i] + " ";
-        buff[3] += args[i] + " ";
-        fim[0] += args[i] + " ";
-        fim[1] += args[i] + " ";
-        fim[2] += args[i] + " ";
-        dog[0] += args[i] + " ";
-        dog[1] += args[i] + " ";
-        dog[2] += args[i] + " ";
-        spider[0] += args[i] + " ";
-        spider[1] += args[i] + " ";
-        spider[2] += args[i] + " ";
-        dragon[0] += args[i] + " ";
-        dragon[1] += args[i] + " ";
-        dragon[2] += args[i] + " ";
-        dragon[3] += args[i] + " ";
-        dragon[4] += args[i] + " ";
-        dragon[5] += args[i] + " ";
-        dragon[6] += args[i] + " ";
-        dragon[7] += args[i] + " ";
-        dragon[8] += args[i] + " ";
-        dragon[9] += args[i] + " ";
+        shell[0] += "หอย1 - " + " ";
+        shell[1] += "หอย2 - " + " ";
+        shell[2] += "หอย3 - " + " ";
+        shell[3] += "หอย4 - " + " ";
+        buff[0] += "ควาย1 - " + " ";
+        buff[1] += "ควาย2 - " + " ";
+        buff[2] += "ควาย3 - " + " ";
+        buff[3] += "ควาย4 - " + " ";
+        fim[0] += "ฟิม1 - " + " ";
+        fim[1] += "ฟิม2 - " + " ";
+        fim[2] += "ฟิม3 - " + " ";
+        dog[0] += "หมา1 - " + " ";
+        dog[1] += "หมา2 - " + " ";
+        dog[2] += "หมา3 - " + " ";
+        spider[0] += "แมงมุม1 - " + " ";
+        spider[1] += "แมงมุม2 - " + " ";
+        spider[2] += "แมงมุม3 - " + " ";
+        dragon[0] += "มังกร1 - " + " ";
+        dragon[1] += "มังกร2 - " + " ";
+        dragon[2] += "มังกร3 - " + " ";
+        dragon[3] += "มังกร4 - " + " ";
+        dragon[4] += "มังกร5 - " + " ";
+        dragon[5] += "มังกร6 - " + " ";
+        dragon[6] += "มังกร7 - " + " ";
+        dragon[7] += "มังกร8 - " + " ";
+        dragon[8] += "มังกร9 - " + " ";
+        dragon[9] += "มังกร10 - " + " ";
+      }
+    case "test":
+      // shell[0] = args[0];
+      for (i = 1; i < args.length; i++)
+      {
+        if(i == 0)
+        {
+          message.channel.sendMessage(args[i]);
+        }
       }
       var embed = new Discord.RichEmbed()
         .addField(boss[0], shell, true)
