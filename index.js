@@ -126,6 +126,9 @@ bot.on("message", function(message) {
     case "ขาว":
       message.channel.sendMessage("กาก");
       break;
+    case "กาก":
+      message.channel.sendMessage("ขาว");
+      break;
     case "หอย1":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
@@ -842,16 +845,6 @@ bot.on("message", function(message) {
           message.channel.sendMessage(args[i]);
         }
       }
-      var embed = new Discord.RichEmbed()
-        .addField(boss[0], shell, true)
-        .addField(boss[1], buff, true)
-        .addField(boss[3], dog, true)
-        .addField(boss[4], spider, true)
-        .addField(boss[2], fim, true )
-        .addField(boss[5], dragon, true)
-        .setColor(0x00FFFF)
-      message.channel.sendEmbed(embed);
-      // message.channel.sendMessage(shell[3]);
       break;
 
 
