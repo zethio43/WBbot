@@ -698,6 +698,79 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[3]);
       break;
+    case "all":
+      // shell[0] = args[0];
+      for (i = 0; i < args.length; i++)
+      {
+        if(i == 0)
+        {
+          shell[0] = "";
+          shell[1] = "";
+          shell[2] = "";
+          shell[3] = "";
+          buff[0] = "";
+          buff[1] = "";
+          buff[2] = "";
+          buff[3] = "";
+          fim[0] = "";
+          fim[1] = "";
+          fim[2] = "";
+          dog[0] = "";
+          dog[1] = "";
+          dog[2] = "";
+          spider[0] = "";
+          spider[1] = "";
+          spider[2] = "";
+          dragon[0] = "";
+          dragon[1] = "";
+          dragon[2] = "";
+          dragon[3] = "";
+          dragon[4] = "";
+          dragon[5] = "";
+          dragon[6] = "";
+          dragon[7] = "";
+          dragon[8] = "";
+          dragon[9] = "";
+        }
+        shell[0] += args[i] + " ";
+        shell[1] += args[i] + " ";
+        shell[2] += args[i] + " ";
+        shell[3] += args[i] + " ";
+        buff[0] += args[i] + " ";
+        buff[1] += args[i] + " ";
+        buff[2] += args[i] + " ";
+        buff[3] += args[i] + " ";
+        fim[0] += args[i] + " ";
+        fim[1] += args[i] + " ";
+        fim[2] += args[i] + " ";
+        dog[0] += args[i] + " ";
+        dog[1] += args[i] + " ";
+        dog[2] += args[i] + " ";
+        spider[0] += args[i] + " ";
+        spider[1] += args[i] + " ";
+        spider[2] += args[i] + " ";
+        dragon[0] += args[i] + " ";
+        dragon[1] += args[i] + " ";
+        dragon[2] += args[i] + " ";
+        dragon[3] += args[i] + " ";
+        dragon[4] += args[i] + " ";
+        dragon[5] += args[i] + " ";
+        dragon[6] += args[i] + " ";
+        dragon[7] += args[i] + " ";
+        dragon[8] += args[i] + " ";
+        dragon[9] += args[i] + " ";
+      }
+      var embed = new Discord.RichEmbed()
+        .addField(boss[0], shell, true)
+        .addField(boss[1], buff, true)
+        .addField(boss[3], dog, true)
+        .addField(boss[4], spider, true)
+        .addField(boss[2], fim, true )
+        .addField(boss[5], dragon, true)
+        .setColor(0x00FFFF)
+      message.channel.sendEmbed(embed);
+      // message.channel.sendMessage(shell[3]);
+      break;
 
 
     default:
