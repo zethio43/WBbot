@@ -15,7 +15,7 @@ var fortunes = [
 var kak = [
   "ปิ๊ง",
   "เติ้ล",
-  "กาก",
+  "ขาว",
 ];
 
 var boss = [
@@ -139,8 +139,8 @@ bot.on("message", function(message) {
       message.channel.sendMessage("กาก");
       break;
     case "กาก":
-    message.channel.sendMessage(kak[Math.floor(Math.random() * fortunes.length)])
-    break;
+      message.channel.sendMessage(kak[Math.floor(Math.random() * fortunes.length)])
+      break;
     case "ปู1":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
@@ -792,8 +792,8 @@ bot.on("message", function(message) {
 
     case "help":
       var embed = new Discord.RichEmbed()
-        .setAuthor("คำสั่งมีตามนี้ ----------- x คือ แชแนล", "https://imgur.com/a/i0ApR")
-        .setThumbnail("https://imgur.com/a/i0ApR")
+        .setAuthor("คำสั่งมีตามนี้ ----------- x คือ แชแนล", "https://i.imgur.com/qY6lRJ2.jpg")
+        .setThumbnail("https://i.imgur.com/qY6lRJ2.jpg")
         .addField("-ปูx ","ตัวอย่าง -ปู1 - 12.00",true)
         .addField("-ควายx ","ตัวอย่าง -ควาย1 - 12.00",true)
         .addField("-หมาx ","ตัวอย่าง -หมา1 - 12.00",true)
@@ -805,7 +805,6 @@ bot.on("message", function(message) {
         .addField("-ขาว ","ลองดู",true)
         .addField("-ปิ๊ง ","ลองดู",true)
         .addField("-เติ้ล ","ลองดู",true)
-        .setTimestamp()
         .setColor(0x00FFFF)
       message.channel.send({embed});
       break;
