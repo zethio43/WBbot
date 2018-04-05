@@ -786,14 +786,14 @@ bot.on("message", function(message) {
 
     case "help":
       var embed = new Discord.RichEmbed()
-        .addField("คำสั่งมีตามนี้ -ชื่อบอสx , x คือ แชแนล")
+        .addField("คำสั่งมีตามนี้ ----------- x คือ แชแนล")
         .addField("-ปูx ")
         .addField("-ควายx ")
         .addField("-หมาx ")
         .addField("-มุมx ")
         .addField("-ฟิมx ")
         .addField("-กรx ")
-        .addField("-บอส "
+        .addField("-บอส ")
         .addField("-กาก ")
         .addField("-ขาว ")
         .addField("-ปิ๊ง ")
