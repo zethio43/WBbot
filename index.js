@@ -12,6 +12,12 @@ var fortunes = [
   "ติดดิวะ"
 ];
 
+var kak = [
+  "ปิ๊ง",
+  "เติ้ล",
+  "กาก",
+];
+
 var boss = [
   "ปู",
   "ควาย",
@@ -133,8 +139,8 @@ bot.on("message", function(message) {
       message.channel.sendMessage("กาก");
       break;
     case "กาก":
-      message.channel.sendMessage("ขาว");
-      break;
+    message.channel.sendMessage(kak[Math.floor(Math.random() * fortunes.length)])
+    break;
     case "ปู1":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
@@ -786,26 +792,28 @@ bot.on("message", function(message) {
 
     case "help":
       var embed = new Discord.RichEmbed()
-        .addField("คำสั่งมีตามนี้ ----------- x คือ แชแนล")
-        .addField("-ปูx ")
-        .addField("-ควายx ")
-        .addField("-หมาx ")
-        .addField("-มุมx ")
-        .addField("-ฟิมx ")
-        .addField("-กรx ")
-        .addField("-บอส ")
-        .addField("-กาก ")
-        .addField("-ขาว ")
-        .addField("-ปิ๊ง ")
-        .addField("-เติ้ล ")
+        .setAuthor("คำสั่งมีตามนี้ ----------- x คือ แชแนล", "https://imgur.com/a/i0ApR")
+        .setThumbnail("https://imgur.com/a/i0ApR")
+        .addField("-ปูx ","ตัวอย่าง -ปู1 - 12.00",true)
+        .addField("-ควายx ","ตัวอย่าง -ควาย1 - 12.00",true)
+        .addField("-หมาx ","ตัวอย่าง -หมา1 - 12.00",true)
+        .addField("-มุมx ","ตัวอย่าง -มุม1 - 12.00",true)
+        .addField("-ฟิมx ","ตัวอย่าง -ฟิม1 - 12.00",true)
+        .addField("-กรx ","ตัวอย่าง -กร1 - 12.00",true)
+        .addField("-บอส ","ดูเวลาบอสทุกตัว",true)
+        .addField("-กาก ","ลุ้นสุ่ม",true)
+        .addField("-ขาว ","ลองดู",true)
+        .addField("-ปิ๊ง ","ลองดู",true)
+        .addField("-เติ้ล ","ลองดู",true)
+        .setTimestamp()
         .setColor(0x00FFFF)
-      message.channel.sendEmbed(embed);
+      message.channel.send({embed});
       break;
 
     case "all":
       for (i = 0; i < args.length; i++)
       {}
-      message.channel.sendMessage(args.length);
+      message.channel.sendMessage(args[1]);
       break;
       // for (i = 0; i < args.length; i++)
       // {
