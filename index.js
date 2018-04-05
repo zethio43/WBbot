@@ -13,7 +13,7 @@ var fortunes = [
 ];
 
 var boss = [
-  "หอย",
+  "ปู",
   "ควาย",
   "Fim (หมาแดง)",
   "หมา",
@@ -22,10 +22,10 @@ var boss = [
 ];
 
 var shell = [
-  "หอย1 - ",
-  "หอย2 - ",
-  "หอย3 - ",
-  "หอย4 - "
+  "ปู1 - ",
+  "ปู2 - ",
+  "ปู3 - ",
+  "ปู4 - "
 ];
 
 var buff = [
@@ -126,10 +126,16 @@ bot.on("message", function(message) {
     case "ขาว":
       message.channel.sendMessage("กาก");
       break;
+    case "เติ้ล":
+      message.channel.sendMessage("กาก");
+      break;
+    case "ปิ๊ง":
+      message.channel.sendMessage("กาก");
+      break;
     case "กาก":
       message.channel.sendMessage("ขาว");
       break;
-    case "หอย1":
+    case "ปู1":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -150,7 +156,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[0]);
       break;
-    case "หอย2":
+    case "ปู2":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -171,7 +177,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[1]);
       break;
-    case "หอย3":
+    case "ปู3":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -192,7 +198,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[2]);
       break;
-    case "หอย4":
+    case "ปู4":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -427,7 +433,7 @@ bot.on("message", function(message) {
       // message.channel.sendMessage(shell[2]);
       break;
 
-    case "แมงมุม1":
+    case "มุม1":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -448,7 +454,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[0]);
       break;
-    case "แมงมุม2":
+    case "มุม2":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -469,7 +475,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[1]);
       break;
-    case "แมงมุม3":
+    case "มุม3":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -491,7 +497,7 @@ bot.on("message", function(message) {
       // message.channel.sendMessage(shell[2]);
       break;
 
-    case "มังกร1":
+    case "กร1":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -512,7 +518,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[0]);
       break;
-    case "มังกร2":
+    case "กร2":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -533,7 +539,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[1]);
       break;
-    case "มังกร3":
+    case "กร3":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -554,7 +560,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[2]);
       break;
-    case "มังกร4":
+    case "กร4":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -575,7 +581,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[3]);
       break;
-    case "มังกร5":
+    case "กร5":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -596,7 +602,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[0]);
       break;
-    case "มังกร6":
+    case "กร6":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -617,7 +623,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[1]);
       break;
-    case "มังกร7":
+    case "กร7":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -638,7 +644,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[2]);
       break;
-    case "มังกร8":
+    case "กร8":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -659,7 +665,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[3]);
       break;
-    case "มังกร9":
+    case "กร9":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -680,7 +686,7 @@ bot.on("message", function(message) {
       message.channel.sendEmbed(embed);
       // message.channel.sendMessage(shell[2]);
       break;
-    case "มังกร10":
+    case "กร10":
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
@@ -778,7 +784,24 @@ bot.on("message", function(message) {
     default:
       message.channel.sendMessage("ไม่มีนะ พิมพ์ใหม่");
 
+    case "help":
+      var embed = new Discord.RichEmbed()
+        .addField("คำสั่งมีตามนี้ -ชื่อบอสx , x คือ แชแนล" true)
+        .addField("-ปูx ", true)
+        .addField("-ควายx ", true)
+        .addField("-หมาx ", true)
+        .addField("-มุมx ", true)
+        .addField("-ฟิมx ", true)
+        .addField("-กรx ", true)
+        .addField("-บอส ", true)
+        .addField("-กาก ", true)
+        .addField("-ขาว ", true)
+        .addField("-ปิ๊ง ", true)
+        .addField("-เติ้ล ", true)
+        .setColor(0x00FFFF)
+      message.channel.sendEmbed(embed);
   }
+
 
 });
 
