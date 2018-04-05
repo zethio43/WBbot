@@ -17,6 +17,7 @@ var kak = [
   "เติ้ล",
   "ขาว",
   "ขาว",
+  "ขาว",
   "ขาว"
 ];
 
@@ -719,63 +720,33 @@ bot.on("message", function(message) {
       // shell[0] = args[0];
       for (i = 0; i < args.length; i++)
       {
-        if(i == 0)
-        {
-          shell[0] = "";
-          shell[1] = "";
-          shell[2] = "";
-          shell[3] = "";
-          buff[0] = "";
-          buff[1] = "";
-          buff[2] = "";
-          buff[3] = "";
-          fim[0] = "";
-          fim[1] = "";
-          fim[2] = "";
-          dog[0] = "";
-          dog[1] = "";
-          dog[2] = "";
-          spider[0] = "";
-          spider[1] = "";
-          spider[2] = "";
-          dragon[0] = "";
-          dragon[1] = "";
-          dragon[2] = "";
-          dragon[3] = "";
-          dragon[4] = "";
-          dragon[5] = "";
-          dragon[6] = "";
-          dragon[7] = "";
-          dragon[8] = "";
-          dragon[9] = "";
-        }
-        shell[0] += "หอย1 - " + " ";
-        shell[1] += "หอย2 - " + " ";
-        shell[2] += "หอย3 - " + " ";
-        shell[3] += "หอย4 - " + " ";
-        buff[0] += "ควาย1 - " + " ";
-        buff[1] += "ควาย2 - " + " ";
-        buff[2] += "ควาย3 - " + " ";
-        buff[3] += "ควาย4 - " + " ";
-        fim[0] += "ฟิม1 - " + " ";
-        fim[1] += "ฟิม2 - " + " ";
-        fim[2] += "ฟิม3 - " + " ";
-        dog[0] += "หมา1 - " + " ";
-        dog[1] += "หมา2 - " + " ";
-        dog[2] += "หมา3 - " + " ";
-        spider[0] += "แมงมุม1 - " + " ";
-        spider[1] += "แมงมุม2 - " + " ";
-        spider[2] += "แมงมุม3 - " + " ";
-        dragon[0] += "มังกร1 - " + " ";
-        dragon[1] += "มังกร2 - " + " ";
-        dragon[2] += "มังกร3 - " + " ";
-        dragon[3] += "มังกร4 - " + " ";
-        dragon[4] += "มังกร5 - " + " ";
-        dragon[5] += "มังกร6 - " + " ";
-        dragon[6] += "มังกร7 - " + " ";
-        dragon[7] += "มังกร8 - " + " ";
-        dragon[8] += "มังกร9 - " + " ";
-        dragon[9] += "มังกร10 - " + " ";
+        shell[0] = "ปู1 - " + " ";
+        shell[1] = "ปู2 - " + " ";
+        shell[2] = "ปู3 - " + " ";
+        shell[3] = "ปู4 - " + " ";
+        buff[0] = "ควาย1 - " + " ";
+        buff[1] = "ควาย2 - " + " ";
+        buff[2] = "ควาย3 - " + " ";
+        buff[3] = "ควาย4 - " + " ";
+        fim[0] = "ฟิม1 - " + " ";
+        fim[1] = "ฟิม2 - " + " ";
+        fim[2] = "ฟิม3 - " + " ";
+        dog[0] = "หมา1 - " + " ";
+        dog[1] = "หมา2 - " + " ";
+        dog[2] = "หมา3 - " + " ";
+        spider[0] = "แมงมุม1 - " + " ";
+        spider[1] = "แมงมุม2 - " + " ";
+        spider[2] = "แมงมุม3 - " + " ";
+        dragon[0] = "มังกร1 - " + " ";
+        dragon[1] = "มังกร2 - " + " ";
+        dragon[2] = "มังกร3 - " + " ";
+        dragon[3] = "มังกร4 - " + " ";
+        dragon[4] = "มังกร5 - " + " ";
+        dragon[5] = "มังกร6 - " + " ";
+        dragon[6] = "มังกร7 - " + " ";
+        dragon[7] = "มังกร8 - " + " ";
+        dragon[8] = "มังกร9 - " + " ";
+        dragon[9] = "มังกร10 - " + " ";
       }
       var embed = new Discord.RichEmbed()
         .addField(boss[0], shell, true)
@@ -816,48 +787,18 @@ bot.on("message", function(message) {
     case "all":
       for (i = 0; i < args.length; i++)
       {
-        if(i == 0)
-        {
-          shell[0] = "";
-          shell[1] = "";
-          shell[2] = "";
-          shell[3] = "";
-          buff[0] = "";
-          buff[1] = "";
-          buff[2] = "";
-          buff[3] = "";
-          fim[0] = "";
-          fim[1] = "";
-          fim[2] = "";
-          dog[0] = "";
-          dog[1] = "";
-          dog[2] = "";
-          spider[0] = "";
-          spider[1] = "";
-          spider[2] = "";
-          dragon[0] = "";
-          dragon[1] = "";
-          dragon[2] = "";
-          dragon[3] = "";
-          dragon[4] = "";
-          dragon[5] = "";
-          dragon[6] = "";
-          dragon[7] = "";
-          dragon[8] = "";
-          dragon[9] = "";
-        }
-        shell[0] += "หอย1 - " + args[1];
-        shell[1] += "หอย2 - " + args[1];
-        shell[2] += "หอย3 - " + args[1];
-        shell[3] += "หอย4 - " + args[1];
-        buff[0] += "ควาย1 - " + args[1];
-        buff[1] += "ควาย2 - " + args[1];
-        buff[2] += "ควาย3 - " + args[1];
-        buff[3] += "ควาย4 - " + args[1];
-        fim[0] += "ฟิม1 - " + args[1];
-        fim[1] += "ฟิม2 - " + args[1];
-        fim[2] += "ฟิม3 - " + args[1];
-        dog[0] += "หมา1 - " + args[1];
+        shell[0] = "ปู1 - " + args[1];
+        shell[1] = "ปู2 - " + args[1];
+        shell[2] = "ปู3 - " + args[1];
+        shell[3] = "ปู4 - " + args[1];
+        buff[0] = "ควาย1 - " + args[1];
+        buff[1] = "ควาย2 - " + args[1];
+        buff[2] = "ควาย3 - " + args[1];
+        buff[3] = "ควาย4 - " + args[1];
+        fim[0] = "ฟิม1 - " + args[1];
+        fim[1] = "ฟิม2 - " + args[1];
+        fim[2] = "ฟิม3 - " + args[1];
+        dog[0] = "หมา1 - " + args[1];
         dog[1] += "หมา2 - " + args[1];
         dog[2] += "หมา3 - " + args[1];
         spider[0] += "แมงมุม1 - " + args[1];
